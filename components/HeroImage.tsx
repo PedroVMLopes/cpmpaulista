@@ -72,22 +72,26 @@ export default function HeroImage() {
         {/* Texto ao lado (ou abaixo em mobile) */}
         <motion.div
             initial={{ opacity: 0, y: 30, width: '0%' }}
-            animate={scrolled ? { opacity: 1, y: 0, padding: '1.5rem', width: '100%' } : { opacity: 0, y: 30, width: '0%' }}
-            transition={{ duration: 0.9, delay: 0.2 }}
+            animate={scrolled ? { opacity: 1, y: 0, width: '100%' } : { opacity: 0, y: 30, width: '0%' }}
+            transition={{ duration: 1.5, delay: 0.2 }}
             className="flex flex-col items-center"
         >
-            <div className="text-center flex flex-col items-center w-[60%]">
+            <div className="text-center flex flex-col items-center md:w-[60%]">
                 <div className='divider divider-accent'>
                     <h2 className="text-2xl md:text-3xl font-bold">
                         CPM PAULISTA
                     </h2>
                 </div>
-                <p className="my-2 text-lg">
-                    Com a experiência de duas décadas e utilizando tecnologia de ponta, a CPM Paulista possui as melhores soluções nas áreas contábil, tributária e trabalhista.
-                </p>
-                <p className="text-lg">
-                    Nossa aposta é em qualificação profissional e atendimento personalizado, oferecendo a melhor solução para seu negócio.
-                </p>
+                <motion.div
+                    
+                >
+                    <p className="my-2 text-lg">
+                        Com a experiência de duas décadas e utilizando tecnologia de ponta, a CPM Paulista possui as melhores soluções nas áreas contábil, tributária e trabalhista.
+                    </p>
+                    <p className="text-lg">
+                        Nossa aposta é em qualificação profissional e atendimento personalizado, oferecendo a melhor solução para seu negócio.
+                    </p>
+                </motion.div>
             </div>
         </motion.div>
     </motion.section>

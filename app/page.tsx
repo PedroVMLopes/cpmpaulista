@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center">
       <div className="w-full">
-        <div className="join m-2 fixed top-0 z-50">
-            <button className="btn btn-ghost join-item backdrop-blur-2xl">Home</button>
+        <div className="join m-2 fixed top-0 z-50 shadow-md rounded-2xl">
+            <button className="btn btn-ghost join-item backdrop-blur-2xl">CPM Paulista</button>
             <button className="btn btn-ghost join-item backdrop-blur-2xl">Newsletter</button>
         </div>
       </div>
