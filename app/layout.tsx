@@ -23,10 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR" data-theme="cpmpaulista">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <button className="btn btn-primary m-2">Home</button>
         {children}
       </body>
     </html>
