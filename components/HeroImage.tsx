@@ -26,7 +26,7 @@ export default function HeroImage() {
             scrolled: {
             paddingTop: '30%',
             alignItems: 'center',
-            width: '80%',
+            width: '90%',
             },
         }}
         transition={{ duration: 0.8 }}
@@ -37,7 +37,7 @@ export default function HeroImage() {
             animate={scrolled ? 'scrolled' : 'initial'}
             variants={{
             initial: { height: '800px', width: '100vw', borderRadius: '0px' },
-            scrolled: { height: '350px', width: '400px', borderRadius: '1.5rem' },
+            scrolled: { height: '500px', width: '800px', borderRadius: '1.5rem' },
             }}
             transition={{ duration: 0.6 }}
             className="relative h-[800px] md:h-auto overflow-hidden"
@@ -74,17 +74,19 @@ export default function HeroImage() {
             initial={{ opacity: 0, y: 30, width: '0%' }}
             animate={scrolled ? { opacity: 1, y: 0, padding: '1.5rem', width: '100%' } : { opacity: 0, y: 30, width: '0%' }}
             transition={{ duration: 0.9, delay: 0.2 }}
-            className="w-full md:w-[50%] text-center"
+            className="flex flex-col items-center"
         >
-            <div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                    CPM PAULISTA
-                </h2>
-                <p className="mb-2 text-lg">
-                    Com a experiência de duas décadas e utilizando tecnologia de ponta, a CPM Paulista possui as melhores soluções nas áreas contábil, tributária e trabalhista para a sua empresa.
+            <div className="text-center flex flex-col items-center w-[60%]">
+                <div className='divider divider-accent'>
+                    <h2 className="text-2xl md:text-3xl font-bold">
+                        CPM PAULISTA
+                    </h2>
+                </div>
+                <p className="my-2 text-lg">
+                    Com a experiência de duas décadas e utilizando tecnologia de ponta, a CPM Paulista possui as melhores soluções nas áreas contábil, tributária e trabalhista.
                 </p>
                 <p className="text-lg">
-                    Nossa aposta é em qualificação profissional e atendimento personalizado para sempre oferecer a melhor solução para as necessidades de seu negócio, garantindo sigilo e segurança das informações com muita seriedade.
+                    Nossa aposta é em qualificação profissional e atendimento personalizado, oferecendo a melhor solução para seu negócio.
                 </p>
             </div>
         </motion.div>
