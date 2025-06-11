@@ -36,10 +36,27 @@
   --noise: 0;
 }
 
-@theme {
-  --font-cabinet: 'CabinetGrotesk-Variable', 'serif';
+@font-face {
+  font-family: 'Outfit-Variable';
+  src: url('../public/fonts/Outfit_Complete/Fonts/WEB/fonts/Outfit-Variable.woff2') format('woff2'),
+       url('../public/fonts/Outfit_Complete/Fonts/WEB/fonts/Outfit-Variable.woff') format('woff'),
+       url('../public/fonts/Outfit_Complete/Fonts/WEB/fonts/Outfit-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Variable';
+  src: url('../public/fonts/CabinetGrotesk_Complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
+       url('../public/fonts/CabinetGrotesk_Complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.woff') format('woff'),
+       url('../public/fonts/CabinetGrotesk_Complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
 }
 
 @theme {
-  --font-sora: 'Sora-Variable', 'mono';
+  --font-outfit: 'Outfit-Variable', 'sans-serif';
+  --font-cabinet: 'CabinetGrotesk-Variable', 'serif';
 }

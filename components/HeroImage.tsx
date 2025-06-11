@@ -67,13 +67,13 @@ export default function HeroImage() {
                         initial: { opacity: 1, scale: 1 },
                         scrolled: { opacity: 0, scale: 0.8 },
                     }}
-                        transition={{ duration: 0.6 }}
-                        className="absolute inset-0 flex items-center justify-center flex-col text-white"
+                    transition={{ duration: 0.6 }}
+                    className="absolute inset-0 flex items-center justify-center flex-col text-white bg-black/50 rounded-2xl"
                     >
-                    <h1 className="text-3xl md:text-6xl p-6 mx-4 text-center font-cabinet">
-                        Simplificando a Gestão Financeira
-                    </h1>
-                    <FaChevronDown  className='text-3xl mt-6 animate-bounce opacity-60'/>
+                        <h1 className="text-5xl md:text-6xl p-6 mx-4 text-center font-cabinet font-bold">
+                            Simplificando a Gestão Financeira
+                        </h1>
+                        <FaChevronDown  className='text-3xl mt-6 animate-bounce opacity-60'/>
                 </motion.div>
             </motion.div>
 
@@ -84,7 +84,7 @@ export default function HeroImage() {
                 transition={{ duration: 0.5, delay: 0 }}
                 className="flex flex-col items-center"
             >
-                <div className="flex flex-col items-center text-xl md:text-3xl md:p-6 font-sora">
+                <div className="flex flex-col items-center text-xl md:text-3xl md:p-6">
                     <SplitText />
                 </div>
             </motion.div>
