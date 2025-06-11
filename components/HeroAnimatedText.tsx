@@ -23,7 +23,7 @@ export default function SplitText() {
                 type: "spring",
                 duration: 2,
                 bounce: 0,
-                delay: stagger(0.07),
+                delay: stagger(0.09),
                 }
             );
         });

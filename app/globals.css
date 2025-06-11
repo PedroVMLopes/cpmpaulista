@@ -35,3 +35,11 @@
   --depth: 1;
   --noise: 0;
 }
+
+@theme {
+  --font-cabinet: 'CabinetGrotesk-Variable', 'serif';
+}
+
+@theme {
+  --font-sora: 'Sora-Variable', 'mono';
+}
