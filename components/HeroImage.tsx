@@ -14,7 +14,7 @@ export default function HeroImage() {
         setHasMounted(true);
 
         const handleScroll = () => {
-        setScrolled(window.scrollY > 100);
+            setScrolled(window.scrollY > 100);
         };
 
         handleScroll();
@@ -29,10 +29,10 @@ export default function HeroImage() {
             variants={{
                 initial: {
                     paddingTop: '0px',
+                    width: '100%',
                 },
                 scrolled: {
                     paddingTop: '30%',
-                    alignItems: 'center',
                     width: '90%',
                 },
             }}
