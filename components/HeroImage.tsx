@@ -12,41 +12,43 @@ export default function HeroImage() {
 
     useEffect(() => {
         setHasMounted(true);
-    }, []);
 
-    useEffect(() => {
         const handleScroll = () => {
         setScrolled(window.scrollY > 100);
         };
+
+        handleScroll();
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     return (
         <motion.section
+            initial={false}
             animate={hasMounted && scrolled ? 'scrolled' : 'initial'}
             variants={{
                 initial: {
-                paddingTop: '0px',
+                    paddingTop: '0px',
                 },
                 scrolled: {
-                paddingTop: '30%',
-                alignItems: 'center',
-                width: '90%',
+                    paddingTop: '30%',
+                    alignItems: 'center',
+                    width: '90%',
                 },
             }}
             transition={{ duration: 0.8 }}
-            className="top-0 w-full flex flex-col md:flex-row justify-center overflow-hidden"
+            className="w-full flex flex-col md:flex-row justify-center overflow-hidden"
         >
             {/* Hero Image container */}
             <motion.div
+                initial={false}
                 animate={hasMounted && scrolled ? 'scrolled' : 'initial'}
                 variants={{
-                initial: { height: '800px', width: '100vw', borderRadius: '0px' },
-                scrolled: { height: '500px', width: '800px', borderRadius: '1.5rem' },
+                    initial: { height: '100vh', width: '100vw', borderRadius: '0px' },
+                    scrolled: { height: '500px', width: '800px', borderRadius: '1.5rem' },
                 }}
                 transition={{ duration: 0.6 }}
-                className="relative h-[800px] md:h-auto overflow-hidden"
+                className="relative overflow-hidden"
             >
                 <picture>
                 <source media="(min-width: 768px)" srcSet="/images/hero-desktop.jpg" />
@@ -68,10 +70,10 @@ export default function HeroImage() {
                     transition={{ duration: 0.6 }}
                     className="absolute inset-0 flex items-center justify-center flex-col text-white"
                     >
-                    <h1 className="text-2xl md:text-6xl font-bold px-4 py-2 rounded text-center">
+                    <h1 className="text-3xl md:text-6xl font-bold p-6 mx-4 text-center">
                         SIMPLIFICANDO A GESTÃO FINANCEIRA
                     </h1>
-                    <FaChevronDown  className='text-3xl mt-6'/>
+                    <FaChevronDown  className='text-3xl mt-6 animate-bounce opacity-60'/>
                 </motion.div>
             </motion.div>
 

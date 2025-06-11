@@ -27,7 +27,7 @@ export default function SplitText() {
     return (
         <div className="container" ref={containerRef}>
             <h1 className="h1">
-                Com 20 anos de experiência e tecnologia de ponta, a CPM Paulista oferece soluções contábeis, tributárias e trabalhistas com atendimento personalizado e excelência profissional
+                Com 20 anos de experiência e tecnologia de ponta, a CPM Paulista oferece soluções contábeis, tributárias e trabalhistas com atendimento personalizado e excelência profissional.
             </h1>
         </div>
     )
