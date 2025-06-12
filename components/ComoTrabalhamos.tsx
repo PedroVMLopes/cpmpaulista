@@ -3,7 +3,7 @@ import CardComoTrabalhamos from "./CardComoTrabalhamos";
 export default function ComoTrabalhamos() {
     return (
         <div className="mt-46 mx-2 md:mx-0 sm:w-[90%]">
-            <h1 className='text-3xl text-center w-full font-cabinet font-semibold'>Como Trabalhamos</h1>
+            <h1 className='text-4xl text-center w-full font-cabinet font-semibold'>Como Trabalhamos</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-6 gap-6">
                 <CardComoTrabalhamos title={"Atendimento"} text={"Totalmente documentado e orientado por profissionais qualificados"} index={0} />
                 <CardComoTrabalhamos title={"Relacionamento"} text={"Sua empresa contará com um gerente exclusivo de relacionamento que acompanhará sua empresa no dia a dia"} index={1} />

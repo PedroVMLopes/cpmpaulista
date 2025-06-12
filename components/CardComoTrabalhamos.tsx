@@ -1,3 +1,5 @@
+import * as motion from "motion/react-client"
+
 type Props = {
     title: string;
     text: string;
@@ -6,7 +8,11 @@ type Props = {
 
 export default function CardComoTrabalhamos({ title, text, index }: Props) {
     return (
-        <div className="card bg-neutral image-full shadow-md">
+        <motion.div 
+            className="card bg-neutral image-full shadow-md"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.8 }}
+        >
             <figure>
                 <img src={`/images/ComoTrabalhamos${index}.jpg`} alt="Imagem de Escritório" />
             </figure>
@@ -14,6 +20,6 @@ export default function CardComoTrabalhamos({ title, text, index }: Props) {
                 <h1 className="card-title">{title}</h1>
                     <p className="card-actions">{text}</p>
             </div>
-        </div>
+        </motion.div>
     )
 }
