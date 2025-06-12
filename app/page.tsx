@@ -1,3 +1,4 @@
+import ComoTrabalhamos from "@/components/ComoTrabalhamos";
 import HeroImage from "@/components/HeroImage";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         </div>
       </div>
       <HeroImage />
+      <ComoTrabalhamos />
       <div className="h-[100vh]"></div>
     </div>
   );

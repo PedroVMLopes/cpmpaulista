@@ -31,7 +31,7 @@ export default function SplitText() {
 
     return (
         <div className="container" ref={containerRef}>
-            <h1 className="h1 mt-6">
+            <h1 className="h1 mt-6 md:mt-0 text-center md:text-start">
                 {text.split(" ").map((word, index) => (
                 <span key={index} className="split-word">
                     {word}&nbsp;
