@@ -1,16 +1,19 @@
 type Props = {
     title: string;
     text: string;
+    index: number;
 }
 
-export default function CardComoTrabalhamos({ title, text }: Props) {
+export default function CardComoTrabalhamos({ title, text, index }: Props) {
     return (
         <div className="card bg-neutral image-full shadow-md">
             <figure>
-                <img src="" alt="" />
+                <img src={`/images/ComoTrabalhamos${index}.jpg`} alt="Imagem de Escritório" />
             </figure>
-            <h1>{title}</h1>
-            <h2>{text}</h2>
+            <div className="card-body flex flex-col">
+                <h1 className="card-title">{title}</h1>
+                    <p className="card-actions">{text}</p>
+            </div>
         </div>
     )
 }
