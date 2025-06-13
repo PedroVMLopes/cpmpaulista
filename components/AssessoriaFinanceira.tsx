@@ -13,8 +13,8 @@ export default function AssessoriaFinanceira() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 w-full p-2 gap-8 md:gap-2 mt-16">
                 {/* Grid 1 */}
-                <div className="indicator w-full flex flex-col justify-around rounded-2xl bg-primary text-primary-content">
-                    <FaCamera className="indicator-item indicator-center bg-primary w-10 h-8 p-1.5 rounded-2xl"/>
+                <div className="indicator w-full flex flex-col justify-around rounded-2xl bg-neutral text-primary-content">
+                    <FaCamera className="indicator-item indicator-center bg-neutral w-10 h-8 p-1.5 rounded-2xl"/>
                     <p className="text-xl p-4 pt-6 pb-0 text-neutral-content">Envie fotos das suas contas</p>
                     <div className="p-4 flex flex-col gap-2">
                         <p>Nós cuidamos de todo o resto.</p>
@@ -22,8 +22,8 @@ export default function AssessoriaFinanceira() {
                     </div>
                 </div>
                 {/* Grid 2 */}
-                <div className="indicator w-full flex flex-col justify-around rounded-2xl bg-primary text-primary-content">
-                    <FaCheckDouble className="indicator-item indicator-center bg-primary text-white w-10 h-8 p-1.5 rounded-2xl"/>
+                <div className="indicator w-full flex flex-col justify-around rounded-2xl bg-neutral text-primary-content">
+                    <FaCheckDouble className="indicator-item indicator-center bg-neutral text-white w-10 h-8 p-1.5 rounded-2xl"/>
                     <p className="text-xl p-4 pt-6 pb-0 text-neutral-content">Aprove os Pagamentos</p>
                     <div className="p-4 flex flex-col gap-2">
                         <p>Aprove o pagamento de suas contas no seu Internet Banking.</p>
@@ -31,8 +31,8 @@ export default function AssessoriaFinanceira() {
                     </div>
                 </div>
                 {/* Grid 3 */}
-                <div className="indicator w-full flex flex-col justify-around rounded-2xl bg-primary text-primary-content">
-                    <FaNewspaper className="indicator-item indicator-center bg-primary text-white w-10 h-8 p-1.5 rounded-2xl"/>
+                <div className="indicator w-full flex flex-col justify-around rounded-2xl bg-neutral text-primary-content">
+                    <FaNewspaper className="indicator-item indicator-center bg-neutral text-white w-10 h-8 p-1.5 rounded-2xl"/>
                     <p className="text-xl p-4 pt-6 pb-0 text-neutral-content">Relatórios em tempo real</p>
                     <div className="p-4 flex flex-col gap-2">
                         <p>Tenha um robusto dashboard com toda a situação financeira de sua empresa.</p>

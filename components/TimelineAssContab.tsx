@@ -17,7 +17,7 @@ export default function Timeline() {
                         />
                     </svg>
                     </div>
-                    <div className="timeline-start timeline-box flex flex-col"><p className="text-base font-semibold font-semibold">CONTABILIDADE</p><p className="text-sm">Assessoria contábil para empresas de pequenos e médio porte</p></div>
+                    <div className="timeline-start timeline-box flex flex-col p-2 py-2.5"><p className="text-base font-semibold text-neutral">CONTABILIDADE</p><p className="text-sm">Assessoria contábil para empresas de pequenos e médio porte</p></div>
                     <hr className="bg-primary"/>
                 </li>
                 <li>
@@ -36,7 +36,7 @@ export default function Timeline() {
                         />
                     </svg>
                     </div>
-                    <div className="timeline-end timeline-box"><p className="text-base font-semibold">TRIBUTÁRIA</p><p className="text-sm">Apuração de impostos municipais, estaduais e federais</p></div>
+                    <div className="timeline-end timeline-box"><p className="text-base font-semibold text-neutral">TRIBUTÁRIA</p><p className="text-sm">Apuração de impostos municipais, estaduais e federais</p></div>
                     <hr className="bg-primary"/>
                 </li>
                 <li>
@@ -55,7 +55,7 @@ export default function Timeline() {
                         />
                     </svg>
                     </div>
-                    <div className="timeline-start timeline-box"><p className="text-base font-semibold">TRABALHISTA</p><p className="text-sm">Coordenação de Recursos Humanos e Folha de Pagamento</p></div>
+                    <div className="timeline-start timeline-box"><p className="text-base font-semibold text-neutral">TRABALHISTA</p><p className="text-sm">Coordenação de Recursos Humanos e Folha de Pagamento</p></div>
                     <hr className="bg-primary"/>
                 </li>
                 <li>
@@ -74,7 +74,7 @@ export default function Timeline() {
                         />
                     </svg>
                     </div>
-                    <div className="timeline-end timeline-box"><p className="text-base font-semibold">SOCIETÁRIO</p><p className="text-sm">Abertura e encerramento de empresas e Alterações contratuais</p></div>
+                    <div className="timeline-end timeline-box"><p className="text-base font-semibold text-neutral">SOCIETÁRIO</p><p className="text-sm">Abertura e encerramento de empresas e Alterações contratuais</p></div>
                     <hr className="bg-primary"/>
                 </li>
                 <li>
@@ -93,7 +93,7 @@ export default function Timeline() {
                         />
                     </svg>
                     </div>
-                    <div className="timeline-start timeline-box"><p className="text-base font-semibold">REGIME TRIBUTÁRIO</p><p className="text-sm">Simples Nacional, Lucro Presumido e Lucro Real</p></div>
+                    <div className="timeline-start timeline-box"><p className="text-base font-semibold text-neutral">REGIME TRIBUTÁRIO</p><p className="text-sm">Simples Nacional, Lucro Presumido e Lucro Real</p></div>
                     <hr className="bg-base-100"/>
                 </li>
             </ul>

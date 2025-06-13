@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <div className="w-full p-2 fixed top-0 z-50">
-        <div className="rounded-2xl flex flex-row justify-between items-center">
+        <div className="rounded-2xl flex flex-row justify-center md:justify-start items-center">
             <div className="join rounded-2xl backdrop-blur-lg shadow-md bg-primary-content/30">
                 <button className="btn btn-ghost join-item">Home</button>
                 <button className="btn btn-ghost join-item">Newsletter</button>
@@ -17,7 +17,6 @@ export default function Navbar() {
                     Contato
                 </button>
             </div>
-            <p className="md:mx-4 font-semibold">CPM Paulista</p>
         </div>
 
         <dialog ref={modalRef} id="modal_contato" className="modal">
