@@ -1,7 +1,7 @@
 export default function Tabela() {
     return (
         <div className="border border-primary/30 rounded-2xl flex flex-col justify-evenly">
-            <p className="w-full border-b border-primary/30 p-2 md:p-0">
+            <p className="w-full border-b border-primary/30 p-2">
                 Todas as obrigações legais com Receita Federal e Prefeitura
             </p>
             <p className="w-full border-b border-primary/30 p-2">

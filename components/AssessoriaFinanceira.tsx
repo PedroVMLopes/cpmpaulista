@@ -3,7 +3,7 @@ import { FaCamera, FaCheckDouble, FaNewspaper } from "react-icons/fa6";
 export default function AssessoriaFinanceira() {
     return (
         <div className="text-center mt-4 flex flex-col items-center">
-            <h1 className="text-2xl py-4">Assessoria Financeira</h1>
+            <h1 className="text-3xl py-4">Assessoria Financeira</h1>
             <p className="p-2 md:max-w-[60%]">
                 Que tal dedicar mais tempo para seus clientes?
             </p>
