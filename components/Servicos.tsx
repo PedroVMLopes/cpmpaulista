@@ -14,7 +14,7 @@ export default function Servicos() {
             {/* Assessoria Contábil */}
             <div className="text-center mt-24 flex flex-col items-center">
                 <h1 className="text-3xl py-4">Assessoria Contábil</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-14">
+                <div className="flex flex-col items-center gap-14 mt-14">
                     <Timeline />
                     <Tabela />
                 </div>
