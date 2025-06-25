@@ -22,12 +22,18 @@ export default function Navbar() {
         <dialog ref={modalRef} id="modal_contato" className="modal">
             <div className="modal-box">
                 <h3 className="font-bold text-lg">Fale Conosco</h3>
-                <p className="pt-4 pb-2">
+                <p className="pt-4 py-2">
                     contato@cpmpaulista.com.br
                 </p>
                 <p className="py-2">
-                    +55 (11) 3487-8935
+                    +55 (11) 91719-7731                    
                 </p>
+                <p className="py-2">
+                    +55 (11) 5039-4705                  
+                </p>
+                <a href="https://www3.cfc.org.br/SPW/ConsultaNacionalCFC/cfc" className="underline py-2">
+                    Conselho de Contabilidade
+                </a>
                 <div className="modal-action">
                     <form method="dialog">
                     <button className="btn">Fechar</button>

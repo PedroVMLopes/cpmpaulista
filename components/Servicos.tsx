@@ -6,7 +6,7 @@ import Timeline from "./TimelineAssContab";
 export default function Servicos() {
     return (
         <div className="mt-46 mx-2 md:mx-0 sm:w-[90%]">
-            <p className="text-4xl text-center w-full font-cabinet font-semibold">Serviços</p>
+            <p className="text-4xl text-center w-full font-cabinet font-semibold divider mb-14">Serviços</p>
 
             {/* Assessoria Financeira */}
             <AssessoriaFinanceira />

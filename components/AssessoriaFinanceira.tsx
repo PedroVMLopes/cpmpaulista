@@ -2,16 +2,16 @@ import { FaCamera, FaCheckDouble, FaNewspaper } from "react-icons/fa6";
 
 export default function AssessoriaFinanceira() {
     return (
-        <div className="text-center mt-4 flex flex-col items-center">
+        <div className="text-center flex flex-col items-center">
             <h1 className="text-3xl py-4">Assessoria Financeira</h1>
             <p className="p-2 md:max-w-[60%]">
                 Que tal dedicar mais tempo para seus clientes?
             </p>
-            <p className="p-2 md:max-w-[60%]">
-                Então libere sua equipe para fazer o que realmente importa.
+            <p className="p-2 md:max-w-[50%]">
+                Libere sua equipe para fazer o que realmente importa.
                 Nossa metodologia de trabalho automatiza tarefas e reduz a rotina financeira de sua empresa.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 w-full p-2 gap-8 md:gap-2 mt-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 w-full p-2 gap-8 md:gap-2 mt-18">
                 {/* Grid 1 */}
                 <div className="indicator w-full flex flex-col justify-around rounded-2xl bg-neutral text-primary-content">
                     <FaCamera className="indicator-item indicator-center bg-neutral w-10 h-8 p-1.5 rounded-2xl"/>
