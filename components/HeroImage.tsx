@@ -14,13 +14,19 @@ export default function HeroImage() {
         setHasMounted(true);
 
         const handleScroll = () => {
-            setScrolled(window.scrollY > 100);
+            if (!scrolled && window.scrollY > 100) {
+                setScrolled(true);
+            }
         };
 
-        handleScroll();
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
+
     }, []);
+
+    const handleButtonClick = () => {
+        setScrolled(true);
+    };
 
     return (
         <motion.section
@@ -32,7 +38,7 @@ export default function HeroImage() {
                     width: '100%',
                 },
                 scrolled: {
-                    paddingTop: '30%',
+                    paddingTop: '20%',
                     width: '90%',
                 },
             }}
@@ -45,20 +51,20 @@ export default function HeroImage() {
                 animate={hasMounted && scrolled ? 'scrolled' : 'initial'}
                 variants={{
                     initial: { height: '100vh', width: '100vw', borderRadius: '0px' },
-                    scrolled: { height: '500px', width: '800px', borderRadius: '1.5rem' },
+                    scrolled: { height: '300px', width: '400px', borderRadius: '1.5rem' },
                 }}
                 transition={{ duration: 0.6 }}
                 className="relative overflow-hidden"
             >
                 <picture>
-                <source media="(min-width: 768px)" srcSet="/images/hero-desktop.jpg" />
-                <Image
-                    src="/images/hero-mobile.jpg"
-                    alt="Imagem do topo"
-                    layout="fill"
-                    objectFit="cover"
-                    priority
-                />
+                    <source media="(min-width: 768px)" srcSet="/images/hero-desktop.jpg" />
+                    <Image
+                        src="/images/hero-mobile.jpg"
+                        alt="Imagem do topo"
+                        layout="fill"
+                        objectFit="cover"
+                        priority
+                    />
                 </picture>
 
                 {/* Texto sobreposto */}
@@ -70,10 +76,11 @@ export default function HeroImage() {
                     transition={{ duration: 0.6 }}
                     className="absolute inset-0 flex items-center justify-center flex-col text-white bg-black/50 rounded-2xl"
                     >
-                        <h1 className="text-5xl md:text-6xl p-6 mx-4 text-center font-cabinet font-bold">
-                            Simplificando a Gestão Financeira
+                        <h1 className="text-5xl md:text-6xl p-6 pb-2 mx-4 text-center font-cabinet font-bold"> CPM Paulista </h1>
+                        <h1 className="text-5xl md:text-6xl p-6 pt-0 mx-4 text-center font-cabinet font-bold opacity-60">
+                            Gestão e Negócios
                         </h1>
-                        <FaChevronDown  className='text-3xl mt-6 animate-bounce opacity-60'/>
+                        <button onClick={handleButtonClick} className='cursor-pointer'> <FaChevronDown  className='text-3xl mt-6 animate-bounce opacity-60'/> </button>
                 </motion.div>
             </motion.div>
 
@@ -83,6 +90,7 @@ export default function HeroImage() {
                 animate={scrolled ? { opacity: 1, y: 0, width: '100%' } : { opacity: 0, y: 30, width: '0%' }}
                 transition={{ duration: 0.5, delay: 0 }}
                 className="flex flex-col items-center"
+                id="nextSection"
             >
                 <div className="flex flex-col items-center text-xl md:text-3xl md:p-6">
                     <SplitText />
