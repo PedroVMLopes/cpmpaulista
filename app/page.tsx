@@ -3,6 +3,7 @@ import HeroImage from "@/components/HeroImage";
 import Servicos from "@/components/Servicos";
 import Navbar from "@/components/Navbar";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   
@@ -13,7 +14,7 @@ export default function Home() {
       <HeroImage />
       <ComoTrabalhamos />
       <Servicos />
-      <div className="h-[100vh]"></div>
+      <Footer />
     </div>
   );
 }
