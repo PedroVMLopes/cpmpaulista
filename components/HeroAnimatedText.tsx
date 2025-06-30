@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { animate, stagger } from "motion";
 
-const text = "Com 20 anos de experiência e tecnologia de ponta, a CPM Paulista oferece soluções contábeis, tributárias e trabalhistas com atendimento personalizado e excelência profissional.";
+const text = "A CPM PAULISTA se dedica a oferecer soluções inovadoras em gestão contábil e financeira. Nosso compromisso é aprimorar continuamente a atuação empresarial, proporcionando um atendimento personalizado para garantir as melhores soluções às necessidades do seu negócio.";
 
 export default function SplitText() {
     const containerRef = useRef<HTMLDivElement>(null);

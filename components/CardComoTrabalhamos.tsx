@@ -1,12 +1,14 @@
 import * as motion from "motion/react-client"
+import { ReactNode } from "react";
 
 type Props = {
     title: string;
     text: string;
+    icon: ReactNode;
     index: number;
 }
 
-export default function CardComoTrabalhamos({ title, text, index }: Props) {
+export default function CardComoTrabalhamos({ title, text, icon, index }: Props) {
     return (
         <motion.div 
             className="card bg-neutral image-full shadow-md"
@@ -17,8 +19,11 @@ export default function CardComoTrabalhamos({ title, text, index }: Props) {
                 <img src={`/images/ComoTrabalhamos${index}.jpg`} alt="Imagem de Escritório" />
             </figure>
             <div className="card-body flex flex-col">
-                <h1 className="card-title text-xl">{title}</h1>
-                    <p className="card-actions text-base">{text}</p>
+                <div className="flex flex-row gap-2 items-center">
+                    <div className="text-2xl"> { icon } </div>
+                    <h1 className="card-title text-xl">{title}</h1>
+                </div>
+                <p className="card-actions text-base">{text}</p>
             </div>
         </motion.div>
     )
