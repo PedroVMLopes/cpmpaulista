@@ -10,7 +10,7 @@ export default function ComoTrabalhamos() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-6 gap-6">
                 <CardComoTrabalhamos 
                     title={"Atendimento e Relacionamento"} 
-                    text={"Atendimento documentado e orientado por profissionais qualificados. Sua empresa conta ainda com um gerente exclusivo de relacionamento para acompanhar o dia a dia."} 
+                    text={"Atendimento documentado e orientado por profissionais qualificados. Sua empresa conta com atendimento exclusivo para acompanhar o dia a dia de suas contas."} 
                     icon={<FaHandshake />}
                     index={0} 
                 />

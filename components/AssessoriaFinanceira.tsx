@@ -5,7 +5,7 @@ export default function AssessoriaFinanceira() {
             <h1 className="text-3xl py-4">Assessoria Financeira</h1>
             <div className="grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-0.5 md:gap-1 w-full p-2 md:p-0 mt-10 text-start rounded-2xl">
                 {/* Grid 1 */}
-                <div className="indicator w-full flex flex-col rounded-2xl rounded-b-none md:rounded-r-none bg-primary text-primary-content">
+                <div className="indicator w-full flex flex-col rounded-xl rounded-b-none md:rounded-r-none bg-secondary text-primary-content">
                     <div className="text-2xl p-4 pt-6 pb-0 flex flex-row items-center gap-2">
                         <p className="font-semibold text-neutral-content">Gestão Financeira (BPO)</p>
                     </div>
@@ -14,7 +14,7 @@ export default function AssessoriaFinanceira() {
                     </div>
                 </div>
                 {/* Grid 2 */}
-                <div className="indicator w-full flex flex-col md:rounded-tr-2xl bg-primary text-primary-content">
+                <div className="indicator w-full flex flex-col md:rounded-tr-xl bg-secondary text-primary-content">
                     <div className="text-2xl p-4 pt-6 pb-0 flex flex-row items-center gap-2">
                         <p className="font-semibold text-neutral-content">Gestão de Indicadores de Desempenho (KPIs)</p>
                     </div>
@@ -23,7 +23,7 @@ export default function AssessoriaFinanceira() {
                     </div>
                 </div>
                 {/* Grid 3 */}
-                <div className="indicator w-full flex flex-col md:rounded-bl-2xl bg-primary text-primary-content">
+                <div className="indicator w-full flex flex-col md:rounded-bl-xl bg-secondary text-primary-content">
                     <div className="text-2xl p-4 pt-6 pb-0 flex flex-row items-center gap-2">
                         <p className="font-semibold text-neutral-content">Análise de Viabilidade Econômica</p>
                     </div>
@@ -32,7 +32,7 @@ export default function AssessoriaFinanceira() {
                     </div>
                 </div>
                 {/* Grid 4 */}
-                <div className="indicator w-full flex flex-col rounded-2xl rounded-t-none md:rounded-bl-none md:rounded-br-2xl bg-primary text-primary-content">
+                <div className="indicator w-full flex flex-col rounded-xl rounded-t-none md:rounded-bl-none md:rounded-br-xl bg-secondary text-primary-content">
                     <div className="text-2xl p-4 pt-6 pb-0 flex flex-row items-center gap-2">
                         <p className="font-semibold text-neutral-content">Business Valuation</p>
                     </div>
