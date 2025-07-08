@@ -80,7 +80,7 @@ export default function HeroImage() {
                         <h1 className="text-5xl md:text-6xl p-6 pt-0 mx-4 text-center font-cabinet font-bold opacity-60">
                             Gestão e Negócios
                         </h1>
-                        <button onClick={handleButtonClick} className='cursor-pointer'> <FaChevronDown  className='text-3xl mt-6 animate-bounce opacity-60'/> </button>
+                        <button onClick={handleButtonClick} className='cursor-pointer btn btn-ghost backdrop-blur-2xl font-bold'> Saiba Mais </button>
                 </motion.div>
             </motion.div>
 
