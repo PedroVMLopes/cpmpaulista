@@ -1,7 +1,7 @@
 export default function Consultoria() {
     return (
         <div className="text-center flex flex-col items-center mt-24">
-            <h1 className="text-3xl mb-8">Consultoria Empresarial</h1>
+            <h1 className="text-3xl md:text-4xl mb-8">Consultoria Empresarial</h1>
             <div className="flex flex-col w-full text-start join join-vertical">
                 <div className="collapse collapse-arrow border bg-base-100 join-item">
                     <input type="radio" name="accordion-ServicosParaEmpresas" defaultChecked />
