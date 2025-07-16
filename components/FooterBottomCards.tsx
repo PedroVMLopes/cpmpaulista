@@ -14,6 +14,7 @@ export default function FooterBottomCards() {
                     <p className="flex flex-row gap-4 items-center w-full"><IoIosMail /> contato@cpmpaulista.com.br</p>
                     <p className="flex flex-row gap-4 items-center w-full"><FaPhone /> +55 (11) 91719-7731</p>
                     <p className="flex flex-row gap-4 items-center w-full"><FaPhone /> +55 (11) 5039-4705</p>
+                    <p className="text-sm mt-2 opacity-80">Fale pelo WhatsApp diretamente clicando no botão no canto da tela</p>
                 </div>
             </div>
 
