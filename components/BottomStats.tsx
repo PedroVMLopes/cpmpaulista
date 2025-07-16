@@ -1,6 +1,5 @@
 import { FaGraduationCap, FaFlagCheckered } from "react-icons/fa6";
 import { BsBuildingFillAdd } from "react-icons/bs";
-import FooterBottomCard from "./FooterBottomCards";
 
 export default function BottomStats() {
     return (

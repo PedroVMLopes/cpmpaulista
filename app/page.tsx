@@ -4,6 +4,7 @@ import Servicos from "@/components/Servicos";
 import Navbar from "@/components/Navbar";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BottomStats from "@/components/BottomStats";
+import FooterBottomCards from "@/components/FooterBottomCards";
 
 export default function Home() {
   
@@ -15,6 +16,7 @@ export default function Home() {
       <ComoTrabalhamos />
       <Servicos />
       <BottomStats />
+      <FooterBottomCards />
     </div>
   );
 }
